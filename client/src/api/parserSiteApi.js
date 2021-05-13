@@ -39,7 +39,7 @@ export const deleteSite = (id) => {
         .catch(e => console.log(e));
 }
 
-// {url : ""}
+//тело запроса {url : ""}
 export const startParseSite = (site) => {
     fetch(`/api/v1/parser`,
         {
