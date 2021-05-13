@@ -12,8 +12,8 @@
 
 ### API
 POST `/api/v1/parser` тело запроса: {url : “https://имя_сайта_типо”} создает задачу на парсинг. 
-GET `/api/v1/parser` вернет ResponseEntity<List<SiteDTOBase>> краткую информацию о сайтах.
-GET `/api/v1/parser/{id}` вернет ResponseEntity<SiteDTO> подробную информацию о сайте.
+GET `/api/v1/parser` вернет список SiteDTOBase краткую информацию о сайтах.
+GET `/api/v1/parser/{id}` вернет SiteDTO подробную информацию о сайте.
 DELETE `/api/v1/parser/{id}` удалит сущность и вернет Integer id удаленного сайта.
 
 ### Вывод
