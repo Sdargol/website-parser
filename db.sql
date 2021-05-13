@@ -1,0 +1,13 @@
+CREATE TABLE site (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL UNIQUE,
+  file_name VARCHAR(255) UNIQUE,
+  status INT NOT NULL
+);
+
+CREATE TABLE statistics (
+  id SERIAL PRIMARY KEY,
+  count_word INT NOT NULL,
+  stats BYTEA,
+  date TIMESTAMP NOT NULL
+);
